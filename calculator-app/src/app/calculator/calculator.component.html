@@ -1,0 +1,8 @@
+<div class="calculator-container">
+  <app-calculator-display [value]="displayValue" />
+  <div class="buttons-container">
+    <button *ngFor="let button of buttons" (click)="onButtonClick(button)">
+      {{ button.value }}
+    </button>
+  </div>
+</div>
